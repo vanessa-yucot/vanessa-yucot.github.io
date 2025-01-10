@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VANYU</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Experience luxury hair care and beauty services at LUXE. Book your appointment today for premium styling, coloring, and treatments.">
+</head>
+<body>
+    <nav>
+        <div class="logo">VANYU</div>
+
+        
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Portfolio</a>
+            <a href="#contact">Schedule</a>
+            <button class="custom-signup-btn" >Sign up</button>
+        </div>
+    </nav>
+
+
+
+    <div class="login-container" style="visibility: hidden;">
+        <svg xmlns="http://www.w3.org/2000/svg" id="close-btn" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        <div class="login-header">
+            <h1>Welcome back</h1>
+            <p>Please enter your details to sign in</p>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required placeholder="Enter your password">
+            </div>
+            <button type="submit" class="login-button">Sign in</button>
+        </form>
+        
+        <div class="login-footer">
+            <span>Don't have an account?</span>
+            <a href="#" id="signup">Sign up</a>
+            <br>
+            
+            <a href="#">Forgot password?</a>
+        </div>
+    </div>
+  
+    <div class="signup-container" style="visibility: hidden;">
+      <svg xmlns="http://www.w3.org/2000/svg" id="close-btn1" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      <div class="signup-header">
+          <h1>Join with us</h1>
+          <p>Please enter your details to sign up</p>
+      </div>
+      <form>
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" required placeholder="Enter your password">
+          </div>
+          <div class="form-group">
+            <label for="password">Confirm Password</label>
+            <input type="password" id="password" required placeholder="Confirm your password">
+          </div>
+          <button type="submit" class="signup-button">Sign up</button>
+      </form>
+      <div class="signup-footer">
+          <span>Already have an account?</span>
+          <a href="#" id="signin">Sign in</a>
+          
+          
+        
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Artistry in Hair Design</h1>
+            <p>Where luxury meets exceptional style</p>
+            <button onclick="scrollToSection('contact')">Schedule Your Visit</button>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Signature Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Precision Haircut</h3>
+                <p>Starting at $95</p>
+            </div>
+            <div class="service-card">
+                <h3>Color Artistry</h3>
+                <p>Starting at $175</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>Luxury Treatment</h3>
+                <p>Starting at $145</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Our Portfolio</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item" style="background-image: url('images/1.jpg')"></div>
+            <div class="gallery-item" style="background-image: url('images/pexels-cottonbro-3993443.jpg')"></div>
+            <div class="gallery-item" style="background-image: url('images/3.avif')"></div>
+            
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Schedule Your Visit</h2>
+        <div class="contact-container">
+            <form id="contact-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <select required>
+                    <option value="">Select Service</option>
+                    <option value="precision-haircut">Precision Haircut</option>
+                    <option value="color-artistry">Color Artistry</option>
+                    
+                    <option value="luxury-treatment">Luxury Treatment</option>
+                </select>
+                <button type="submit">Request Appointment</button>
+            </form>
+            <div class="contact-info">
+                <h3>Visit Our Salon</h3>
+                <p>1200 Madison Avenue</p>
+                <p>Sanfrancisco, Talibon, Bohol</p>
+                <p>Tel: (212) 555-0123</p>
+                <p>Email: vanessayucot@gmail.com</p>
+                <p>Tuesday - Friday: 9:00 AM - 8:00 PM</p>
+                <p>Saturday: 9:00 AM - 6:00 PM</p>
+                <p>Sunday - Monday: By Appointment</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 VANYU. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
